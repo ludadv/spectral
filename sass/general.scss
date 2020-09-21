@@ -74,9 +74,9 @@ a {
 .inner {
   max-width: 675px;
   margin: 0 auto;
-  padding: 8.1rem 4rem;
-  @media screen and (min-width: 320px) {
-    padding: 4rem 2rem;
+  padding: 4rem 2rem;
+  @media screen and (min-width: 576px) {
+    padding: 8.1rem 4rem;
   }
 }
 

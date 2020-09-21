@@ -13,7 +13,7 @@
         <div class="header">
             <div class="btn-menu">
                 <button class="button button--btn js-btn">Menu
-                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <span class="btn-close"><i class="fa fa-bars icons" aria-hidden="true"></i></span>
                 </button>
             </div>
             <div class="show-menu">
@@ -24,13 +24,7 @@
                     <li><a href="">item</a></li>
                     <li><a href="">item</a></li>
                 </ul>
-                <button class="js-btn-close btn-close">
-                    <span class=""><i class="fas fa-times"></i></span>
-                </button>
             </div>
-<!--            <button class="js-btn-close btn-close">-->
-<!--                <span class=""><i class="fas fa-times"></i></span>-->
-<!--            </button>-->
         </div> <!--/header-->
 
 
@@ -283,12 +277,12 @@
     <script>
         $( ".js-btn" ).on( "click",function() {
             $(".show-menu").addClass("show");
-            $(".btn-close").addClass("show");
+            $(".icons").removeClass("fa fa-bars").addClass("fa fa-times fa-2x");
 
         });
-        // $( ".js-btn-close" ).on( "click",function() {
-        //     $(".show-menu").removeClass("show");
-        // });
+        $( ".btn-close" ).on( "click",function() {
+            $(".show-menu").removeClass("show");
+        });
     </script>
 
 
