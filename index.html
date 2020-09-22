@@ -278,12 +278,13 @@
         $( ".js-btn" ).on( "click",function() {
             if ($(".show-menu").hasClass("show")) {
                     $(".show-menu").removeClass("show");
-                    $("icons").css( "display", "none" );
+                     $(".icons").removeClass( "change");
 
             } else {
                 $(".show-menu").addClass("show")
+                $(".icons").addClass( "change");
             }
-            // .removeClass("show");
+                // .removeClass("show");
             // $(".show-menu").removeClass("show");
             // // $(".icons").removeClass("fa fa-bars").addClass("fa fa-times fa-2x");
 
